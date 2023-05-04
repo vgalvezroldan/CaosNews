@@ -165,3 +165,46 @@
         height: 6.6rem; 
     }
 }
+
+.btn-up{
+    width: 50px;
+    height: 50px;
+    outline: 0;
+    border-radius: 50%;
+    border: 1px solid royalblue;
+    background-color: royalblue;
+    position: fixed;
+    right: 20px;
+    left: 95%;
+    bottom: 50px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-up:hover{
+    opacity: .75;
+}
+
+.fa-arrow-up{
+    color: #fff;
+    font-size: 18px;
+}
+
+/** Clases del JS */
+
+.hide{
+    opacity: 0;
+}
+
+.active{
+    opacity: 1;
+}
+
+.tex_titulo {
+    text-align: center;
+}
+
+.container .busqueda{
+    align-items: right;
+    align-content: right;
+}

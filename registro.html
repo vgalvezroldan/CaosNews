@@ -6,36 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro CaosNews</title>
     <link rel="stylesheet" href="/style.css">
- 
   
   </head>
 
   <body>
+    
     <form class="form-registro"  method="POST">
         <h5>Registro de Usuario Caos News</h5>
         
-        <input class="control" type="text" id="userName" name="nombre" value="" placeholder="Nombre" required>
-        
-        <input class="control" type="text" id="userName" name="apellido" value="" placeholder="Apellido" required>
-     
-        <input class="control" type="text" id="userEmail" name="usuario" value="" placeholder="Email" required>
-       
-        <input class="control" type="text" id="validationCustom04" name="contrasena" value="" placeholder="Contraseña" required>
-        
-        <input class="control" type="text" id="validationCustom05" name="contrasena" value="" placeholder="Repetir Contraseña" required>
-        
-       <input type="submit" id="button" value="Registrarse" >
-    
+        <input class="control" type="text" id="userName"  placeholder="Nombre" required maxlength="20">
+        <input class="control" type="text" id="userName" placeholder="Apellido" required maxlength="20">
+        <input class="control" type="email" id="userEmail" placeholder="Correo Electronico" required maxlength="20">
+        <input class="control" type="password" id="validationCustom04"  placeholder="Contraseña" required maxlength="20">
+        <input class="control" type="password" id="validationCustom05"  placeholder="Repetir Contraseña" required maxlength="20">
+        <input type="submit" id="button" value="Registrarse" >
     </form>
 
- 
-    
-   
-
-
-
-
-    <script src="/app.js"></script>
+    <script src="/js/ejemplo.js"></script>
 
 </body>
 </html>

@@ -1,4 +1,3 @@
-
 const formulario = document.getElementById("formulario");
 
 const userName = document.getElementById("userName");
@@ -65,3 +64,5 @@ formulario.addEventListener("submit", (e) => {
     console.log("Formulario enviado con éxito");
     pintarMensajeExito();
 });
+
+

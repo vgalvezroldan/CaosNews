@@ -9,14 +9,17 @@
 
 </head>
 <body>
-    <section class="form-login">
+    <form class="form-login" method="POST">
         <h5>Inicio de Sesión Caos News</h5>
-        <input class="control" type="text" name="usuario" value="" placeholder="Email">
-        <input class="control" type="text" name="contrasena" value="" placeholder="Contraseña">
-        <input class="button" type="submit" name="" value="Ingresar">
+        <input class="control" type="email" id="userEmail" placeholder="Correo Electronico" required>
+        <input class="control" type="password" placeholder="Contraseña" required>
+        <input type="submit" id="button" value="Ingresar">
         <p><a href="#"> ¿Olvidaste tu Contraseña? </a></p>
-        <p><a href="#"> Registrarse</a></p>
-    </section>
+        <p><a href="/registro.html"> Registrarse</a></p>
+    </form>
     
+
+    <script src="/js/ejemplo.js"></script>
+
 </body>
 </html>
