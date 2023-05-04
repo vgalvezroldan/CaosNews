@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Login</title>
+    <title>Registro CaosNews</title>
     <link rel="stylesheet" href="/css/style.css">
+  
 
     <!--CDN-->
 
@@ -69,18 +70,19 @@
       </div>
     </nav>
 
+  </head>
 
-</head>
-<body>
-    <form class="form-login" method="POST">
-        <h5>Inicio de Sesión Caos News</h5>
-        <input class="control" type="email" id="userEmail" placeholder="Correo Electronico" required>
-        <input class="control" type="password" placeholder="Contraseña" required>
-        <input type="submit" id="button" value="Ingresar">
-        <p><a href="#"> ¿Olvidaste tu Contraseña? </a></p>
-        <p><a href="/registro.html"> Registrarse</a></p>
-    </form>
+  <body>
     
+    <form class="form-registro"  method="POST">
+        <h5>Formulario de Contacto</h5>
+        
+        <input class="control" type="text" id="userName"  placeholder="Nombre" required maxlength="20">
+        <input class="control" type="text" id="userName" placeholder="Apellido" required maxlength="20">
+        <input class="control" type="email" id="userEmail" placeholder="Correo Electronico" required maxlength="20">
+        <input class ="control" textarea="100" placeholder="Mensaje" required></input>
+        <input type="submit" id="button" value="Enviar" >
+    </form>
 
     <script src="/js/ejemplo.js"></script>
 
