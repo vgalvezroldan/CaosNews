@@ -1,5 +1,5 @@
 // BTN UP (SCROLL UP)
-
+// SUBIR DOCUMENTO
 const $btnUp = document.getElementById("up");
 
 window.addEventListener("scroll", (e)=>{
