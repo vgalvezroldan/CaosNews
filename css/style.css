@@ -7,30 +7,34 @@
     color: floralwhite;
 }
 
+/*CUERPO*/
 body {
     font-family: arial;
     background-image: url(/img/textura-pared-estuco-azul-marino-relieve-decorativo-abstracto-grunge-fondo-color-rugoso-gran-angular.jpg);
 
 }
 
+/*TODO EL DOCUMENTO*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/*FORMULARIO LOGIN*/
 .form-login {
     width: 400px;
     height: 340px;
     background: #4e4d4d;
     margin: auto;
     margin-top: 180px;
-    box-shadow: 7px 13px 37px #000;
+    box-shadow: 7px 13px 37px #000000;
     padding: 20px 30px;
     border-top: 4px solid #017bab;
     color: white;
 }
 
+/*ETIQUETA H5 DEL FORMULARIO LOGIN*/
 .form-login h5 {
     margin: 0;
     text-align: center;
@@ -40,19 +44,21 @@ body {
     font-size: 20px;
 }
 
+/*FORMULARIO REGISTRO Y CONTACTO*/
 .form-registro {
     width: 400px;
     height: 430px;
     background: #4e4d4d;
     margin: auto;
     margin-top: 140px;
-    box-shadow: 7px 13px 37px #000;
+    box-shadow: 7px 13px 37px #000000;
     padding: 20px 30px;
     border-top: 4px solid #017bab;
     color: white;
     
 }
 
+/*EIQUETA H5 FORMULARIO DE REGISTRO Y CONTACTO*/
 .form-registro h5 {
     margin: 0;
     text-align: center;
@@ -62,7 +68,7 @@ body {
     font-size: 20px;
 }
 
-
+/*INPUTS FORMULARIOS*/
 .control {
     width: 100%;
     border: 1px solid #017bab;
@@ -71,8 +77,10 @@ body {
     background: #252323;
     font-size: 12px;
     font-weight: bold;
+    color: aliceblue;
 }
 
+/*BOTONES FORMULARIOS*/
 #button {
     width: 100%;
     height: 40px;
@@ -82,18 +90,21 @@ body {
     margin-bottom: 15px;
 }
 
+/*ETIQUETA P FORMULARIO LOGIN*/
 .form-login p {
     height: 40px;
     text-align: center;
     
 }
 
+/*ETIQUETA A FORMULARIO LOGIN*/
 .form-login a{
     color: white;
     text-decoration: none;
     font-size: 14px;
 }
 
+/*POSICIONAMIENTO DEL MOUSE ENCIMA DE ETIQUETA A FORMULARIO LOGIN*/
 .form-login a:hover{
     text-decoration: underline;
 }

@@ -1,112 +1,91 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caos News</title>
-    
-    <!--CDN-->
-    <link rel="stylesheet" href="css/style2.css">
-    
-    <link rel="icon" href="/icons/android-icon-72x72.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caos News</title>
 
-    <!--NABVAR-->
-    <header class="d-flex flex-wrap py-3 mb-5 border-bottom">
-    </header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" style="color: rgb(255, 255, 255);"><i class="fa-solid fa-newspaper"></i></a>
-        <a class="navbar-brand" href="#" style="color: rgb(255, 255, 255);">Caos News</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+  <!--CDN-->
+  <link rel="stylesheet" href="/css/style_noticias.css">
 
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>                    
-            </li>
+  <link rel="icon" href="/icons/android-icon-72x72.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--END CDN-->
 
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/contacto.html">Contacto</a>                    
-            </li>
+  <!--NABVAR-->
 
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/login.html">Iniciar Sesion</a>                    
-            </li>
+  <header class="d-flex flex-wrap py-3 mb-5 border-bottom">
+  </header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" style="color: rgb(255, 255, 255);"><i class="fa-solid fa-newspaper"></i></a>
+      <a class="navbar-brand" href="#" style="color: rgb(255, 255, 255);">Caos News</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-                     
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            
-            
-            <li class="Busqueda">
-                <a class="nav-link">Buscar:</a>
-            </li>
-            
-            <li class="Recuadro">
-                <input type="search" style="border-radius: 10px; padding-bottom: 13px;">
-            </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
 
-          </ul>
-        </div>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/contacto.html">Contacto</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/login.html">Iniciar Sesion</a>
+          </li>
+
+        </ul>
       </div>
-    </nav>
-    <!-- Boton Volver -->
-    
+    </div>
+  </nav>
+  <!--END NABVAR-->
 
-        <!--COMIENZO BODY-->
-        <body class="cuerpo">
-          <h1 class="text-center">Dólar retrocede en día marcado por decisión de tasas del Banco Central</h1>
-          <h4 class="text-center">La divisa está en $790,50, lo que implica una caída de $3,70 con respecto al cierre de este jueves.</h4>
-      </div>
+
+  <!--COMIENZO BODY-->
+
+<body>
+
+
+
+
+  <div class="capa"></div>
+  <div class="parrafo">
+    <img src="/img/dolar 3.jpg">
+    <h6><strong>La atención del mercado se concentra en lo que decida esta tarde el Banco Central.</strong></h6>
+    “En el ámbito nacional, hoy se publicará el comunicado respectivo de la Reunión de Política monetaria del Banco
+    Central de Chile a las 18.00 horas, el cual no debería tener mayores cambios y se mantendría una tasa de interés del
+    11,25% en el mes de mayo y en la reunión de junio, pero bajaría al 9,75% en un horizonte de cinco meses, según una
+    encuesta del organismo a analistas según Reuters”, señaló Francisco Román de XTB Latam.
+
+    Renato Campos de Admirals, sostuvo que “hoy el Banco Central volverá a definir su tasa de política monetaria, motivo
+    por el cual el par mantiene un rango acotado de cotización considerando las expectativas que señalan un posible
+    grado de flexibilización que podría llegar a considerar el ente rector ante las debilidades económicas que señala
+    Chile durante el presente año. El mercado espera una contracción en la tasa de referencia hasta un 9-8% antes de
+    finalizar 2023″.
+
   </div>
-  <div class="row">
-      <div class="noticia3">
-          <img src="/img/dolar 3.jpg" class="Dolar">
-          <p class="N1"> 
-            El dólar comienza la jornada con retrocesos, en una sesión marcada por la decisión que adoptará el Banco Central 
-            con respecto a la tasa de interés, tras su reunión de política monetaria. Además, se conocerán una serie de datos de relevancia en EEUU.
-            La divisa está en $790,50, lo que implica una caída de $3,70 con respecto al cierre de este jueves. </p>
 
-            <h4 >La atención del mercado se concentra en lo que decida esta tarde el Banco Central.</h4>
-            <p> “En el ámbito nacional, hoy se publicará el comunicado respectivo de la Reunión de Política monetaria del Banco Central
-               de Chile a las 18.00 horas, el cual no debería tener mayores cambios y se mantendría una tasa de interés del 11,25% en el 
-               mes de mayo y en la reunión de junio, pero bajaría al 9,75% en un horizonte de cinco meses, según una encuesta del organismo 
-               a analistas según Reuters”, señaló Francisco Román de XTB Latam. </p>
 
-               <h4>Las claves para envejecer bien y ser feliz</h4>
-          <p> Para la médico de 102 años, es necesario encontrar un propósito central para prolongar la longevidad y aumentar el bienestar.
-            Renato Campos de Admirals, sostuvo que “hoy el Banco Central volverá a definir su tasa de política monetaria, motivo por el cual el par mantiene un rango acotado de cotización considerando las 
-            expectativas que señalan un posible grado de flexibilización que podría llegar a considerar el ente rector ante las debilidades económicas que señala Chile durante el presente año. El mercado 
-            espera una contracción en la tasa de referencia hasta un 9-8% antes de finalizar 2023″.</p>
-
-            <h4>Anexo</h4>
-          <p> El Grupo de Política Monetaria recomendó al ente rector mantener la tasa en 11,25%, debido a que la inflación aun sigue elevada.
-          </p>
-      </div>
-  </div>
-  
-       <!--SCROLL UP-->
-  <button class="btn-up" id="up">
-    <i class="fa-solid fa-arrow-up"></i>
-  </button>
-
-  <!--VINCULO A ARCHIVO JAVASCRIPT-->
-  <script src="/js/ejemplo.js"></script>
 </body>
 
-
-<footer>©CaosNews</footer>
 </html>
