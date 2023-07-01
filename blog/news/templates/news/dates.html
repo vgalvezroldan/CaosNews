@@ -1,0 +1,77 @@
+{% extends 'news/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="alert alert-success" role="alert">
+  {% if month == 1 %} Todos los Posts publidados en : <strong>Enero de {{ year }}{% endif %}</strong>
+  {% if month == 2 %} Todos los Posts publidados en : <strong>Febrero de {{ year }}{% endif %}</strong>
+  {% if month == 3 %} Todos los Posts publidados en : <strong>Marzo de {{ year }}{% endif %}</strong>
+  {% if month == 4 %} Todos los Posts publidados en : <strong>Abril de {{ year }}{% endif %}</strong>
+  {% if month == 5 %} Todos los Posts publidados en : <strong>Mayo de {{ year }}{% endif %}</strong>
+  {% if month == 6 %} Todos los Posts publidados en : <strong>Junio de {{ year }}{% endif %}</strong>
+  {% if month == 7 %} Todos los Posts publidados en : <strong>Julio de {{ year }}{% endif %}</strong>
+  {% if month == 8 %} Todos los Posts publidados en : <strong>Agosto de {{ year }}{% endif %}</strong>
+  {% if month == 9 %} Todos los Posts publidados en : <strong>Septiembre de {{ year }}{% endif %}</strong>
+  {% if month == 10 %} Todos los Posts publidados en : <strong>Octubre de {{ year }}{% endif %}</strong>
+  {% if month == 11 %} Todos los Posts publidados en : <strong>Noviembre de {{ year }}{% endif %}</strong>
+  {% if month == 12 %} Todos los Posts publidados en : <strong>Diciembre de {{ year }}{% endif %}</strong>
+</div>
+
+
+{% for post in posts %}
+
+<style>
+  .card-img-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .card-img-container img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+</style>
+
+<div class="card mb-3">
+  <div class="row g-0">
+    <div class="col-md-5">
+      <div class="card-img-container">
+        <img src="{{ post.image.url }}" class="card-img" alt="...">
+      </div>
+    </div>
+    <div class="col-md-7">
+      <div class="card-body">
+        <strong class="d-inline-block mb-2 text-primary">{{ post.category }}</strong>
+        <h4 class="mb-0">{{ post.title }}</h4>
+        <div class="mb-1 text-muted">{{ post.created|date:"d M Y" }}</div>
+        <p class="card-text mb-auto">{{ post.excerpt }}</p>
+        <p class="card-text"><small class="text-muted"><a href="{% url 'post' post.id %}" class="stretched-link">Seguir Leyendo</a></small></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% empty %}
+<div class="alert alert-danger" role="alert">
+    <strong> NO EXISTEN POSTS PUBLICADOS EN ESA FECHA : {{ category_name }} </strong>
+  </div>
+{% endfor %}
+
+
+
+<hr>
+
+<hr>
+
+
+{% if request.path != '/' %}
+<a class="btn btn-success rounded-pill" href="{% url 'home' %}">Volver al Home</a>
+{% endif %}
+</nav>
+
+
+
+{% endblock %}
